@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOYOTA SUPRA Webpage</title>
+<link rel="stylesheet"href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+@font-face{font-family:myfont;
+		src: url(FC Lamoon Regular ver 1.00.ttf);
+		}
+	body{background:#696969;
+		font-family:myfont;
+		font-size:12px;}
+	h1{font-family:myfont;}
+	h2{font-family:myfont;}
+	h3{font-family:myfont;}
+	body{font-family:myfont;}
+</style>
+</head>
+<body>
+<header>
+	<section><p></p></section>
+</header>
+<nav>
+	<ul class="navbar">
+			<li><a href="#"class="active">Home</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="page3.html">All New Supra GR</a></li>
+			<li><a href="page4.html">Spec All New Supra GR</a></li>
+			<li><a href="page5.html">Gallery</a></li>
+			<li><a href="page6.html">Video</a></li>
+			<li><a href="page7.html">Contact</a></li>
+	</ul>
+</nav>
+<br>
+<br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="image/intro_01.jpg" style="width:100%">
+  <img class="mySlides" src="image/story_01.jpg" style="width:100%">
+  <img class="mySlides" src="image/design_01.jpg" style="width:100%">
+  <img class="mySlides" src="image/design_02.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<article>
+	<section>
+	
+	</section>
+<article>
+
+<footer>
+	<section> <!--footer ขวา-->
+	<a href="https://en.wikipedia.org/wiki/Toyota_Supra"target="_blank">wikipedia</a><br>
+	<a href="https://www.toyota.com/upcoming-vehicles/gr-supra/"target="_blank">Toyota GR Supra Offcial</a><br>
+	<a href="https://www.facebook.com/supragarage/"target="_blank">Fan Page Toyota Supra</a><br>
+	</section>
+	<section> <!--footer ซ้าย-->
+	&copy; 2019 :: Internetworking :: Toyota Motor Corporation<br>
+	นายธนธรณ์ มีพร้อม :: 59502100210-9<br>
+	เรื่อง หยกสวรรค์  วิมลเศรษฐ<br>
+	ข้อมูลจาก : www.pepperrr.net<br>
+	ภาพจาก : www.google.com<br>
+	เรียบเรียงข้อมูลโดย GRANDPRIX ONLINE<br>
+	เนื้อหาในเว็บไซต์เป็นส่วนหนึ่งของผู้เขียนเรื่อง ผู้จัดทำเว็บไซต์นำมาใช้เพื่อการเรียนรู้การสร้างเว็บไซต์เท่านั้น<br>
+	</section>
+</body>
+</html>
